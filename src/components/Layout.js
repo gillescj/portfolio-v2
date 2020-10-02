@@ -21,11 +21,15 @@ const MainWrapper = styled.div`
     }
 `;
 
-const Layout = ({ children, maxWidth = QUERIES.maxWidth, padding = '2rem 1rem' }) => {
+const Layout = ({
+    children,
+    maxWidth = QUERIES.maxContentWidth,
+    padding = '2rem 1rem',
+}) => {
     return (
         <Container>
             <Header />
-            <MainWrapper maxWidth={QUERIES.maxWidth} padding={padding}>
+            <MainWrapper maxWidth={QUERIES.maxContentWidth} padding={padding}>
                 <main>{children}</main>
             </MainWrapper>
             <Footer />
