@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { QUERIES, COLOURS } from 'styling';
+import { QUERIES, COLOURS, VALUES } from 'styling';
 import Navigation from './Navigation';
 import MobileNavigation from './MobileNavigation';
 
@@ -14,6 +14,7 @@ const WidthWrapper = styled.div`
 
 const Container = styled.header`
     color: ${COLOURS.textHeader};
+    min-height: ${VALUES.headerHeight};
 `;
 
 const Header = () => {
