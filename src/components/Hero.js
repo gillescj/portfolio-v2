@@ -1,13 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-import { COLOURS } from 'styling';
+import { COLOURS, QUERIES, VALUES } from 'styling';
 
 const Container = styled.section`
     display: grid;
     grid-gap: 1rem;
     color: ${COLOURS.textMain};
-    justify-self: center;
-    padding-top: 5rem;
+    justify-content: start;
+    align-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 15vh;
+    min-height: calc(100vh - ${VALUES.headerHeight});
+    @media (${QUERIES.medium}) {
+        padding-top: 5vw;
+    }
 `;
 
 const Intro = styled.h5`
@@ -17,7 +24,7 @@ const Intro = styled.h5`
 `;
 
 const H1 = styled.h1`
-    font-size: 5.5rem;
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
     &::selection {
         background-color: white;
         color: black;
@@ -37,7 +44,7 @@ const Description = styled.p`
     font-size: 1.2rem;
     font-weight: 300;
     max-width: 600px;
-    margin-top: 2rem;
+    margin-top: 1vh;
     line-height: 2rem;
 `;
 
