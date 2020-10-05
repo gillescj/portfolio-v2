@@ -43,7 +43,7 @@ const About = styled(H1)`
 const Description = styled.p`
     font-size: 1.2rem;
     font-weight: 300;
-    max-width: 600px;
+    max-width: 500px;
     margin-top: 1vh;
     line-height: 2rem;
 `;
@@ -51,16 +51,17 @@ const Description = styled.p`
 const ProjectsButton = styled.button`
     justify-self: start;
     margin-top: 2rem;
-    padding: 1.2rem;
     background: inherit;
     color: ${COLOURS.textMain};
     font-size: 1.3rem;
     padding: 0.5rem 1rem;
-    background: hsla(0, 100%, 100%, 0.05);
-    border: 3px white solid;
-    box-shadow: 10px -10px hsla(0, 100%, 100%, 0.05),
-        inset calc(10px - 3px) calc(-10px + 3px) black;
     cursor: pointer;
+    transition: all 300ms;
+    border: 3px ${COLOURS.textMain} solid;
+    border-bottom-right-radius: 1.5rem;
+    &:hover {
+        border: 3px ${COLOURS.accent} solid;
+    }
 `;
 
 const Hero = () => {
@@ -70,9 +71,8 @@ const Hero = () => {
             <Name>Colin Gillespie.</Name>
             <About>I develop websites.</About>
             <Description>
-                Eius laudantium nostrum non qui vero et culpa a. Illum sit ut quis error
-                ut adipisci provident est. Consectetur sunt quas qui voluptates sapiente.
-                Iste temporibus itaque modi ipsam.
+                I'm a software developer based in Ontario, Canada specializing in frontend
+                website development.
             </Description>
             <ProjectsButton>View Projects</ProjectsButton>
         </Container>
