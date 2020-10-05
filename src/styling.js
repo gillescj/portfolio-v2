@@ -14,3 +14,7 @@ export const COLOURS = {
     textSecondary: 'hsl(0,0%,80%)',
     bgMain: 'black',
 };
+
+export const VALUES = {
+    headerHeight: '6rem',
+};
