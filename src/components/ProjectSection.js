@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { COLOURS } from 'styling';
+import { ReactComponent as GithubSVG } from 'assets/svgs/github.svg';
+import { ReactComponent as ExternalLinkSVG } from 'assets/svgs/external-link.svg';
 
 const Container = styled.section`
     display: grid;
@@ -37,6 +39,8 @@ const Details = styled.div`
 `;
 
 const Title = styled.h2`
+    display: flex;
+    justify-content: ${({ placement }) => (placement === 'right' ? 'end' : 'start')};
     margin-bottom: 10px;
     text-align: ${({ placement }) => (placement === 'right' ? 'end' : 'start')};
     font-weight: 500;
@@ -45,6 +49,13 @@ const Title = styled.h2`
     a {
         &:hover {
             filter: brightness(1.2);
+        }
+        margin: 0 0.5rem;
+        &:last-of-type {
+            margin-right: 0;
+        }
+        &:first-of-type {
+            margin-left: 0;
         }
     }
 `;
@@ -102,6 +113,12 @@ const ProjectSection = ({ content, placement }) => {
                 <Title placement={placement}>
                     <a rel="noopener noreferrer" target="_blank" href={siteUrl}>
                         {title}
+                    </a>
+                    <a rel="noopener noreferrer" target="_blank" href={githubUrl}>
+                        <GithubSVG />
+                    </a>
+                    <a rel="noopener noreferrer" target="_blank" href={siteUrl}>
+                        <ExternalLinkSVG />
                     </a>
                 </Title>
                 <Description placement={placement}>{description}</Description>
