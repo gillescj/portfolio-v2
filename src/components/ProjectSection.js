@@ -15,8 +15,9 @@ const ImageLink = styled.a`
     background-size: cover;
     transition: background-position 0.5s ease-in;
     background-position: top;
-    z-index: 300;
-    background-size: 112%;
+    z-index: 10;
+    background-size: 115%;
+    filter: brightness(0.8);
     &:hover {
         background-position: bottom;
         transform: scale(1.03);
@@ -31,8 +32,8 @@ const Details = styled.div`
     grid-column: ${({ placement }) => (placement === 'right' ? '7/-1' : '1/7')};
     grid-gap: 1rem;
     grid-row: 1;
-    z-index: 301;
     align-self: center;
+    z-index: 11;
 `;
 
 const ProjectTitle = styled.h2`
@@ -47,8 +48,10 @@ const ProjectTitle = styled.h2`
 
 const Description = styled.p`
     text-align: ${({ placement }) => (placement === 'right' ? 'end' : 'start')};
-    background: black;
-    border: white solid 3px;
+    background: ${COLOURS.accent};
+    border-radius: ${({ placement }) =>
+        placement === 'right' ? '0 0 0 20px' : '0 0 20px 0'};
+    line-height: 1.5rem;
     border-right: none;
     border-left: none;
     padding: 1rem;
@@ -59,9 +62,15 @@ const Description = styled.p`
 
 const Skills = styled.ul`
     display: grid;
-    grid-auto-flow: column;
-    justify-content: ${({ placement }) => (placement === 'right' ? 'end' : 'start')};
-    grid-gap: 2rem;
+    grid-template-columns: 1fr 3fr;
+    ul {
+        grid-column: 2;
+        padding: 0.5rem 0;
+        display: grid;
+        justify-content: ${({ placement }) => (placement === 'right' ? 'end' : 'start')};
+        grid-auto-flow: column;
+        grid-gap: 2rem;
+    }
     li {
         list-style: none;
     }
@@ -93,9 +102,11 @@ const ProjectSection = ({ content, placement }) => {
                 </ProjectTitle>
                 <Description placement={placement}>{description}</Description>
                 <Skills placement={placement}>
-                    {skills.map((skill) => (
-                        <li>{skill}</li>
-                    ))}
+                    <ul>
+                        {skills.map((skill) => (
+                            <li>{skill}</li>
+                        ))}
+                    </ul>
                 </Skills>
             </Details>
         </Container>
