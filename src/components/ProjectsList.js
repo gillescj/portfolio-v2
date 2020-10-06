@@ -5,7 +5,7 @@ import { projectDataList } from 'data/projectData';
 
 const Container = styled.section`
     display: grid;
-    grid-gap: 3rem;
+    grid-gap: 5rem;
     margin: 2rem 0;
 `;
 

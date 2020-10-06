@@ -36,13 +36,16 @@ const Details = styled.div`
     z-index: 11;
 `;
 
-const ProjectTitle = styled.h2`
+const Title = styled.h2`
     margin-bottom: 10px;
     text-align: ${({ placement }) => (placement === 'right' ? 'end' : 'start')};
     font-weight: 500;
+    font-size: 2rem;
     color: ${COLOURS.textSecondary};
-    &:hover {
-        filter: brightness(1.2);
+    a {
+        &:hover {
+            filter: brightness(1.2);
+        }
     }
 `;
 
@@ -62,9 +65,10 @@ const Description = styled.p`
 
 const Skills = styled.ul`
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: ${({ placement }) =>
+        placement === 'right' ? '1fr 3fr' : '3fr 1fr'};
     ul {
-        grid-column: 2;
+        grid-column: ${({ placement }) => (placement === 'right' ? '2' : '1')};
         padding: 0.5rem 0;
         display: grid;
         justify-content: ${({ placement }) => (placement === 'right' ? 'end' : 'start')};
@@ -95,11 +99,11 @@ const ProjectSection = ({ content, placement }) => {
                 image={image}
             />
             <Details placement={placement}>
-                <ProjectTitle placement={placement}>
+                <Title placement={placement}>
                     <a rel="noopener noreferrer" target="_blank" href={siteUrl}>
                         {title}
                     </a>
-                </ProjectTitle>
+                </Title>
                 <Description placement={placement}>{description}</Description>
                 <Skills placement={placement}>
                     <ul>
