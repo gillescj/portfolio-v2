@@ -9,7 +9,7 @@ export const QUERIES = {
 };
 
 export const COLOURS = {
-    accent: 'hsl(187, 100%, 49%)',
+    accent: 'hsl(210, 80%, 25%)',
     textMain: 'white',
     textSecondary: 'hsl(0,0%,80%)',
     bgMain: 'black',
