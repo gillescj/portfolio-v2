@@ -49,7 +49,7 @@ export const projectDataList = [
             githubUrl: 'https://github.com/gillescj/nonstop-news',
         },
         image:
-            'https://github.com/gillescj/files/blob/master/reddit-clone-scroll.jpg?raw=true',
+            'https://github.com/gillescj/files/blob/master/nonstop-news-scroll.jpg?raw=true',
     },
     {
         title: `Game Atlas`,
@@ -63,7 +63,7 @@ export const projectDataList = [
             githubUrl: 'https://github.com/gillescj/game-atlas',
         },
         image:
-            'https://github.com/gillescj/files/blob/master/reddit-clone-scroll.jpg?raw=true',
+            'https://github.com/gillescj/files/blob/master/game-atlas-scroll.jpg?raw=true',
     },
     {
         title: `Cryptosh`,
@@ -75,6 +75,6 @@ export const projectDataList = [
             githubUrl: 'https://github.com/gillescj/cryptosh',
         },
         image:
-            'https://github.com/gillescj/files/blob/master/reddit-clone-scroll.jpg?raw=true',
+            'https://github.com/gillescj/files/blob/master/cryptosh-scroll.jpg?raw=true',
     },
 ];
