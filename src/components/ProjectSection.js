@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { COLOURS } from 'styling';
+import { COLOURS, QUERIES } from 'styling';
 import { ReactComponent as GithubSVG } from 'assets/svgs/github.svg';
 import { ReactComponent as ExternalLinkSVG } from 'assets/svgs/external-link.svg';
 
@@ -26,16 +26,31 @@ const ImageLink = styled.a`
         transition: background-position 2s ease-in, transform 0.5s ease-in;
         filter: brightness(1);
     }
+    @media (${QUERIES.medium}) {
+        grid-column: 1 / -1;
+        filter: brightness(0.2);
+        &:hover {
+            background-position: top;
+            transform: scale(1);
+            filter: brightness(0.2);
+        }
+    }
 `;
 
 const Details = styled.div`
     display: grid;
-    grid-column: 7 / -1;
     grid-column: ${({ placement }) => (placement === 'right' ? '7/-1' : '1/7')};
     grid-gap: 1rem;
     grid-row: 1;
     align-self: center;
     z-index: 11;
+    @media (${QUERIES.large}) {
+        grid-column: ${({ placement }) => (placement === 'right' ? '6/-1' : '1/8')};
+    }
+    @media (${QUERIES.medium}) {
+        grid-column: 1 / -1;
+        padding: 1rem;
+    }
 `;
 
 const Title = styled.h2`
