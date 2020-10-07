@@ -60,7 +60,7 @@ const Navigation = () => {
                 </SVGContainer>
             </LogoContainer>
             <RightNav>
-                <NavItem name="Projects" />
+                <NavItem name="Projects" to="#projects" />
             </RightNav>
         </ContainerStandard>
     );

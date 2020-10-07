@@ -15,7 +15,7 @@ const ProjectsHeader = styled.h1`
 
 const ProjectsList = () => {
     return (
-        <Container>
+        <Container id="projects">
             <ProjectsHeader>Projects</ProjectsHeader>
             {projectDataList.map((project, index) => (
                 <ProjectSection

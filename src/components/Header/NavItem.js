@@ -7,9 +7,6 @@ const Container = styled.li`
     color: ${COLOURS.textMain};
     text-decoration: inherit;
     padding: 5px 0;
-`;
-
-const ContainerStandard = styled(Container)`
     font-weight: 700;
     font-size: 1.1rem;
 `;
@@ -51,17 +48,16 @@ const NavItem = ({ to, name, children }) => {
     const [open, setOpen] = useState(false);
 
     return (
-        <ContainerStandard
-            onMouseEnter={() => setOpen(true)}
-            onMouseLeave={() => setOpen(false)}
-        >
-            <LabelContainer>
-                {name}
-                {children ? <ChevDownSVG /> : null}
-            </LabelContainer>
+        <Container onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+            <a href={to}>
+                <LabelContainer>
+                    {name}
+                    {children ? <ChevDownSVG /> : null}
+                </LabelContainer>
 
-            {open && children}
-        </ContainerStandard>
+                {open && children}
+            </a>
+        </Container>
     );
 };
 
