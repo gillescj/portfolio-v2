@@ -8,9 +8,6 @@ const Container = styled.li`
     color: ${COLOURS.textHeader};
     text-decoration: inherit;
     padding-right: 0.5rem;
-`;
-
-const ContainerStandard = styled(Container)`
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.1rem;
@@ -55,14 +52,16 @@ const MobileNavItem = ({ to, name, children }) => {
     const [open, setOpen] = useState(false);
 
     return (
-        <ContainerStandard onClick={() => setOpen((previousOpen) => !previousOpen)}>
-            <LabelContainer open={open}>
-                {name}
-                {children ? <ChevDownSVG /> : null}
-            </LabelContainer>
+        <Container onClick={() => setOpen((previousOpen) => !previousOpen)}>
+            <a href={to}>
+                <LabelContainer open={open}>
+                    {name}
+                    {children ? <ChevDownSVG /> : null}
+                </LabelContainer>
 
-            {open && children}
-        </ContainerStandard>
+                {open && children}
+            </a>
+        </Container>
     );
 };
 

@@ -105,41 +105,8 @@ const MobileNavigation = ({ headerType }) => {
                     </HamburgerButton>
                 </Topbar>
                 <Dropdown open={open}>
-                    <MobileNavItem
-                        to="/standard"
-                        name="Standard"
-                        headerType={headerType}
-                    />
-                    <MobileNavItem
-                        to="/floating"
-                        name="Floating"
-                        headerType={headerType}
-                    />
-                    <MobileNavItem
-                        to={`/${headerType}`}
-                        name="Dropdown"
-                        headerType={headerType}
-                    >
-                        <MobileNavItemDropdown>
-                            <MobileNavItem
-                                to={`/${headerType}`}
-                                name="Option One"
-                                headerType={headerType}
-                            />
-
-                            <MobileNavItem
-                                to={`/${headerType}`}
-                                name="Option Two"
-                                headerType={headerType}
-                            />
-
-                            <MobileNavItem
-                                to={`/${headerType}`}
-                                name="Option Three"
-                                headerType={headerType}
-                            />
-                        </MobileNavItemDropdown>
-                    </MobileNavItem>
+                    <MobileNavItem name="Projects" to="#projects" />
+                    <MobileNavItem name="Contact" to="#contact" />
                 </Dropdown>
             </Navbar>
         </Container>

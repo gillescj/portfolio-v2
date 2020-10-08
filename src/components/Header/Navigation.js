@@ -61,6 +61,7 @@ const Navigation = () => {
             </LogoContainer>
             <RightNav>
                 <NavItem name="Projects" to="#projects" />
+                <NavItem name="Contact" to="#contact" />
             </RightNav>
         </ContainerStandard>
     );
