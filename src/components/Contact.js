@@ -81,6 +81,7 @@ const colourCodes = [
 
 const Contact = () => {
     const [copied, setCopied] = useState(false);
+    const [clicking, setClicking] = useState(false);
     const [colourIndex, setColourIndex] = useState(0);
     const [colour, setColour] = useState(colourCodes[0]);
 
@@ -109,6 +110,7 @@ const Contact = () => {
         config: { mass: 1, tension: 300, friction: 10 },
         transform: copied ? 'scale(1.35)' : 'scale(1)',
         fill: colour,
+        scale: clicking ? '0.8' : '1',
     });
 
     return (
@@ -124,7 +126,12 @@ const Contact = () => {
                 <CopyButton onClick={() => copyEmail()}>Copy</CopyButton>
             </Details>
             <Graphic>
-                <AnimatedPaperPlane style={springProps} onClick={() => nextColour()} />
+                <AnimatedPaperPlane
+                    style={springProps}
+                    onClick={() => nextColour()}
+                    onMouseDown={() => setClicking(true)}
+                    onMouseUp={() => setClicking(false)}
+                />
             </Graphic>
         </Container>
     );
