@@ -61,7 +61,6 @@ const CopyButton = styled.button`
 `;
 
 const StyledPaperPlaneSVG = styled(PaperPlaneSVG)`
-    fill: ${({ copied }) => (copied ? COLOURS.accent : COLOURS.textMain)};
     transition: fill 300ms;
     width: 7rem;
     height: 7rem;
@@ -90,7 +89,7 @@ const Contact = () => {
     const copyEmail = () => {
         emailTextRef.current.select();
         document.execCommand('copy');
-        setCopied(!copied);
+        setCopied((previousCopied) => !previousCopied);
     };
 
     const nextColour = () => {
@@ -125,11 +124,7 @@ const Contact = () => {
                 <CopyButton onClick={() => copyEmail()}>Copy</CopyButton>
             </Details>
             <Graphic>
-                <AnimatedPaperPlane
-                    copied={copied}
-                    style={springProps}
-                    onClick={() => nextColour()}
-                />
+                <AnimatedPaperPlane style={springProps} onClick={() => nextColour()} />
             </Graphic>
         </Container>
     );
