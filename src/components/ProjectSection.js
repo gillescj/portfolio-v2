@@ -140,7 +140,7 @@ const ProjectSection = ({ content, placement }) => {
                 <Skills placement={placement}>
                     <ul>
                         {skills.map((skill) => (
-                            <li>{skill}</li>
+                            <li key={skill}>{skill}</li>
                         ))}
                     </ul>
                 </Skills>

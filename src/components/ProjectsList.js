@@ -19,6 +19,7 @@ const ProjectsList = () => {
             <ProjectsHeader>Projects</ProjectsHeader>
             {projectDataList.map((project, index) => (
                 <ProjectSection
+                    key={project.title}
                     content={project}
                     placement={index % 2 ? 'left' : 'right'}
                 />
