@@ -4,6 +4,7 @@ import { COLOURS } from 'styling';
 import Layout from 'components/Layout';
 import Hero from 'components/Hero';
 import ProjectsList from './ProjectsList';
+import Contact from './Contact';
 
 const Container = styled.div`
     background: ${COLOURS.bgMain};
@@ -16,6 +17,7 @@ function App() {
             <Layout>
                 <Hero />
                 <ProjectsList />
+                <Contact />
             </Layout>
         </Container>
     );
