@@ -10,7 +10,7 @@ const Container = styled.section`
 `;
 
 const ProjectsHeader = styled.h1`
-    font-size: 2.5rem;
+    font-size: 3rem;
 `;
 
 const ProjectsList = () => {
