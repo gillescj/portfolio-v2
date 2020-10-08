@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { COLOURS, QUERIES } from 'styling';
-import { useSpring, animated, config } from 'react-spring';
+import { useSpring, animated } from 'react-spring';
 import { ReactComponent as PaperPlaneSVG } from 'assets/svgs/paper-plane.svg';
 
 const Container = styled.section`

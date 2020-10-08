@@ -3,7 +3,6 @@ import { COLOURS, QUERIES } from 'styling';
 import styled from 'styled-components';
 import { ReactComponent as MenuSVG } from 'assets/svgs/menu.svg';
 import MobileNavItem from './MobileNavItem';
-import MobileNavItemDropdown from './MobileNavItemDropdown';
 
 const Container = styled.div`
     display: none;
