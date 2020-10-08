@@ -13,6 +13,7 @@ const Container = styled.footer`
 const ArrowButton = styled.button`
     background: none;
     border: none;
+    cursor: pointer;
     svg {
         stroke: ${COLOURS.textMain};
         width: 64px;
@@ -27,12 +28,14 @@ const ArrowButton = styled.button`
 `;
 
 const Footer = () => {
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behaviour: 'smooth' });
+    };
+
     return (
         <Container>
-            <ArrowButton>
-                <a href="#">
-                    <ChevronUpSVG />
-                </a>
+            <ArrowButton onClick={() => scrollToTop()}>
+                <ChevronUpSVG />
             </ArrowButton>
         </Container>
     );
