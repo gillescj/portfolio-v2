@@ -1,8 +1,8 @@
 # Portfolio
 
-Version 2 of my current portfolio showcasing recent projects. Developed with React.
+My current portfolio showcasing recent projects. Developed with React.
 
-[Colin Gillespie | Portfolio](https://jolly-carson-a72613.netlify.app/)
+[Colin Gillespie | Portfolio](https://colingillespie.dev/)
 
 ### Installing and Running
 
@@ -12,3 +12,5 @@ Within root:
 npm install
 npm run start
 ```
+
+![Nonstop News Desktop](https://github.com/gillescj/files/blob/master/portfolio-v2.png?raw=true)
