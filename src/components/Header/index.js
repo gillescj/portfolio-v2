@@ -15,6 +15,9 @@ const WidthWrapper = styled.div`
 const Container = styled.header`
     color: ${COLOURS.textHeader};
     min-height: ${VALUES.headerHeight};
+    @media (${QUERIES.medium}) {
+        min-height: ${VALUES.headerMobileHeight};
+    }
 `;
 
 const Header = () => {
