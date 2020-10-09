@@ -65,13 +65,10 @@ const Title = styled.h2`
         &:hover {
             filter: brightness(1.2);
         }
-        margin: 0 0.5rem;
-        &:last-of-type {
-            margin-right: 0;
-        }
-        &:first-of-type {
-            margin-left: 0;
-        }
+    }
+    @media (${QUERIES.medium}) {
+        justify-content: start;
+        text-align: start;
     }
 `;
 
@@ -81,12 +78,14 @@ const Description = styled.p`
     border-radius: ${({ placement }) =>
         placement === 'right' ? '0 0 0 20px' : '0 0 20px 0'};
     line-height: 1.5rem;
-    border-right: none;
-    border-left: none;
     padding: 1rem;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
         0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042),
         0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+    @media (${QUERIES.medium}) {
+        text-align: start;
+        border-radius: ${'0 0 20px 0'};
+    }
 `;
 
 const Skills = styled.ul`
@@ -96,13 +95,40 @@ const Skills = styled.ul`
     ul {
         grid-column: ${({ placement }) => (placement === 'right' ? '2' : '1')};
         padding: 0.5rem 0;
-        display: grid;
+        display: flex;
         justify-content: ${({ placement }) => (placement === 'right' ? 'end' : 'start')};
-        grid-auto-flow: column;
         grid-gap: 2rem;
+        flex-wrap: wrap;
     }
     li {
         list-style: none;
+    }
+    @media (${QUERIES.medium}) {
+        grid-template-columns: ${'1fr'};
+        ul {
+            grid-column: ${'1'};
+            justify-content: ${'start'};
+        }
+    }
+`;
+
+const Links = styled.div`
+    display: flex;
+    justify-content: ${({ placement }) => (placement === 'right' ? 'end' : 'start')};
+    a {
+        &:hover {
+            filter: brightness(1.2);
+        }
+        margin: 0 0.5rem;
+        &:last-of-type {
+            margin-right: 0;
+        }
+        &:first-of-type {
+            margin-left: 0;
+        }
+    }
+    @media (${QUERIES.medium}) {
+        justify-content: ${'start'};
     }
 `;
 
@@ -129,12 +155,6 @@ const ProjectSection = ({ content, placement }) => {
                     <a rel="noopener noreferrer" target="_blank" href={siteUrl}>
                         {title}
                     </a>
-                    <a rel="noopener noreferrer" target="_blank" href={githubUrl}>
-                        <GithubSVG />
-                    </a>
-                    <a rel="noopener noreferrer" target="_blank" href={siteUrl}>
-                        <ExternalLinkSVG />
-                    </a>
                 </Title>
                 <Description placement={placement}>{description}</Description>
                 <Skills placement={placement}>
@@ -144,6 +164,14 @@ const ProjectSection = ({ content, placement }) => {
                         ))}
                     </ul>
                 </Skills>
+                <Links placement={placement}>
+                    <a rel="noopener noreferrer" target="_blank" href={githubUrl}>
+                        <GithubSVG />
+                    </a>
+                    <a rel="noopener noreferrer" target="_blank" href={siteUrl}>
+                        <ExternalLinkSVG />
+                    </a>
+                </Links>
             </Details>
         </Container>
     );
