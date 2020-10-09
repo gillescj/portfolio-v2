@@ -17,4 +17,5 @@ export const COLOURS = {
 
 export const VALUES = {
     headerHeight: '6rem',
+    headerMobileHeight: '4rem',
 };
