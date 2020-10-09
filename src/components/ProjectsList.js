@@ -11,6 +11,7 @@ const Container = styled.section`
 
 const ProjectsHeader = styled.h1`
     font-size: 3rem;
+    padding-top: 1rem;
 `;
 
 const ProjectsList = () => {
