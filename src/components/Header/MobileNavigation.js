@@ -114,6 +114,7 @@ const MobileNavigation = () => {
                         onClick={() => {
                             setOpen((previousOpen) => !previousOpen);
                         }}
+                        aria-label="Navigation Menu Toggle Button"
                     >
                         <MenuSVG />
                     </HamburgerButton>

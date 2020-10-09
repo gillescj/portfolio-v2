@@ -120,10 +120,13 @@ const Contact = () => {
                 <Email
                     ref={emailTextRef}
                     value="gillescj.developer@gmail.com"
+                    name="Email"
                     readOnly
                     onClick={() => copyEmail()}
                 />
-                <CopyButton onClick={() => copyEmail()}>Copy</CopyButton>
+                <CopyButton onClick={() => copyEmail()} aria-label="Copy Email">
+                    Copy
+                </CopyButton>
             </Details>
             <Graphic>
                 <AnimatedPaperPlane

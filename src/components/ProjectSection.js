@@ -165,10 +165,20 @@ const ProjectSection = ({ content, placement }) => {
                     </ul>
                 </Skills>
                 <Links placement={placement}>
-                    <a rel="noopener noreferrer" target="_blank" href={githubUrl}>
+                    <a
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href={githubUrl}
+                        title="Github Repository"
+                    >
                         <GithubSVG />
                     </a>
-                    <a rel="noopener noreferrer" target="_blank" href={siteUrl}>
+                    <a
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href={siteUrl}
+                        title="Live Site"
+                    >
                         <ExternalLinkSVG />
                     </a>
                 </Links>

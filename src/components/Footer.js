@@ -34,7 +34,7 @@ const Footer = () => {
 
     return (
         <Container>
-            <ArrowButton onClick={() => scrollToTop()}>
+            <ArrowButton onClick={() => scrollToTop()} aria-label="Scroll back to top">
                 <ChevronUpSVG />
             </ArrowButton>
         </Container>
