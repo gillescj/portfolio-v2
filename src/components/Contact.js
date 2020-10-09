@@ -120,7 +120,7 @@ const Contact = () => {
                 <Email
                     ref={emailTextRef}
                     value="gillescj.developer@gmail.com"
-                    name="Email"
+                    aria-label="Email"
                     readOnly
                     onClick={() => copyEmail()}
                 />

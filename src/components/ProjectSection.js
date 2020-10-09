@@ -149,6 +149,7 @@ const ProjectSection = ({ content, placement }) => {
                 href={siteUrl}
                 placement={placement}
                 image={image}
+                title="Live Site Link with Image of Site"
             />
             <Details placement={placement}>
                 <Title placement={placement}>
