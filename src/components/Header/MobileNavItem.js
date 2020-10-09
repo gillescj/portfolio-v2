@@ -4,7 +4,6 @@ import { COLOURS } from 'styling';
 import { ReactComponent as ChevDownSVG } from 'assets/svgs/chev-down.svg';
 
 const Container = styled.li`
-    font-family: 'Raleway', sans-serif;
     color: ${COLOURS.textHeader};
     text-decoration: inherit;
     padding-right: 0.5rem;

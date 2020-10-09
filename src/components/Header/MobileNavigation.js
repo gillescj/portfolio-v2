@@ -3,6 +3,7 @@ import { COLOURS, QUERIES } from 'styling';
 import styled from 'styled-components';
 import { ReactComponent as MenuSVG } from 'assets/svgs/menu.svg';
 import MobileNavItem from './MobileNavItem';
+import { ReactComponent as LogoSVG } from 'assets/svgs/logo.svg';
 
 const Container = styled.div`
     display: none;
@@ -22,11 +23,6 @@ const Topbar = styled.div`
     align-items: center;
     padding: 0.5rem 1rem;
     border-bottom: white 1px solid;
-`;
-
-const StoreHeading = styled.h3`
-    font-weight: 500;
-    font-size: 1.5rem;
 `;
 
 const HamburgerButton = styled.button`
@@ -85,14 +81,33 @@ const Dropdown = styled.ul`
     }
 `;
 
-const MobileNavigation = ({ headerType }) => {
+const LogoContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+const SVGContainer = styled.div`
+    svg {
+        height: 44px;
+        width: auto;
+        display: block;
+        margin: auto;
+    }
+`;
+
+const MobileNavigation = () => {
     const [open, setOpen] = useState(false);
 
     return (
         <Container>
             <Navbar>
                 <Topbar>
-                    <StoreHeading>Engaging Logo</StoreHeading>
+                    <LogoContainer>
+                        <SVGContainer>
+                            <LogoSVG />
+                        </SVGContainer>
+                    </LogoContainer>
 
                     <HamburgerButton
                         open={open}
