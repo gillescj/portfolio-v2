@@ -13,7 +13,8 @@ const Container = styled.section`
     padding-bottom: 15vh;
     min-height: calc(100vh - ${VALUES.headerHeight});
     @media (${QUERIES.medium}) {
-        padding-top: 5vw;
+        padding-left: 0;
+        padding-right: 0;
     }
 `;
 
@@ -24,7 +25,7 @@ const Intro = styled.h5`
 `;
 
 const H1 = styled.h1`
-    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    font-size: clamp(2.25rem, 7vw, 5.5rem);
     &::selection {
         background-color: white;
         color: black;
