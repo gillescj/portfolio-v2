@@ -55,7 +55,8 @@ const Details = styled.div`
 
 const Title = styled.h2`
     display: flex;
-    justify-content: ${({ placement }) => (placement === 'right' ? 'end' : 'start')};
+    justify-content: ${({ placement }) =>
+        placement === 'right' ? 'flex-end' : 'flex-start'};
     margin-bottom: 10px;
     text-align: ${({ placement }) => (placement === 'right' ? 'end' : 'start')};
     font-weight: 500;
@@ -96,7 +97,8 @@ const Skills = styled.ul`
         grid-column: ${({ placement }) => (placement === 'right' ? '2' : '1')};
         padding: 0.5rem 0;
         display: flex;
-        justify-content: ${({ placement }) => (placement === 'right' ? 'end' : 'start')};
+        justify-content: ${({ placement }) =>
+            placement === 'right' ? 'flex-end' : 'flex-start'};
         grid-gap: 2rem;
         flex-wrap: wrap;
     }
