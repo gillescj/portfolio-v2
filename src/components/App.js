@@ -12,10 +12,12 @@ const Container = styled.div`
     color: ${COLOURS.textMain};
 `;
 
-ReactGA.initialize('UA-179273123-2');
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 function App() {
+    useEffect(() => {
+        ReactGA.initialize('UA-179273123-2');
+        ReactGA.pageview('/');
+    }, []);
+
     return (
         <Container>
             <Layout>
