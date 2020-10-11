@@ -123,7 +123,8 @@ const Skills = styled.ul`
 const Links = styled.div`
     grid-column: ${({ placement }) => (placement === 'right' ? '2' : '1')};
     display: flex;
-    justify-content: ${({ placement }) => (placement === 'right' ? 'end' : 'start')};
+    justify-content: ${({ placement }) =>
+        placement === 'right' ? 'flex-end' : 'flex-start'};
     a {
         &:hover {
             filter: brightness(1.2);
