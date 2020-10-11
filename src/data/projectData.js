@@ -2,7 +2,8 @@ export const projectDataList = [
     {
         title: `Gatsby's Pizzeria`,
         skills: ['React', 'Gatsby', 'SCSS', 'Styled-Components'],
-        description: `A fake family pizzeria restaurant website built on GatsbyJS.`,
+        description: `A restaurant website that displays menu items and general information 
+        about the fake family owned small business.`,
         links: {
             siteUrl: 'https://pizzeria.colingillespie.dev/',
             githubUrl: 'https://github.com/gillescj/pizzeria',
