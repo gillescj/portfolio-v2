@@ -40,20 +40,26 @@ const ImageLink = styled.a`
 const Details = styled.div`
     display: grid;
     grid-column: ${({ placement }) => (placement === 'right' ? '7/-1' : '1/7')};
+    grid-template-columns: ${({ placement }) =>
+        placement === 'right' ? '1.5fr 5.5fr' : '5.5fr 1.5fr'};
     grid-gap: 1rem;
     grid-row: 1;
     align-self: center;
     z-index: 11;
     @media (${QUERIES.large}) {
         grid-column: ${({ placement }) => (placement === 'right' ? '6/-1' : '1/8')};
+        grid-template-columns: ${({ placement }) =>
+            placement === 'right' ? '2.5fr 5.5fr' : '5.5fr 2.5fr'};
     }
     @media (${QUERIES.medium}) {
         grid-column: 1 / -1;
         padding: 1rem;
+        justify-content: start;
     }
 `;
 
 const Title = styled.h2`
+    grid-column: ${({ placement }) => (placement === 'right' ? '2' : '1')};
     display: flex;
     justify-content: ${({ placement }) =>
         placement === 'right' ? 'flex-end' : 'flex-start'};
@@ -68,12 +74,14 @@ const Title = styled.h2`
         }
     }
     @media (${QUERIES.medium}) {
+        grid-column: 1/-1;
         justify-content: start;
         text-align: start;
     }
 `;
 
 const Description = styled.p`
+    grid-column: 1/-1;
     text-align: ${({ placement }) => (placement === 'right' ? 'end' : 'start')};
     background: ${COLOURS.accent};
     border-radius: ${({ placement }) =>
@@ -90,11 +98,9 @@ const Description = styled.p`
 `;
 
 const Skills = styled.ul`
+    grid-column: ${({ placement }) => (placement === 'right' ? '2' : '1')};
     display: grid;
-    grid-template-columns: ${({ placement }) =>
-        placement === 'right' ? '1fr 3fr' : '3fr 1fr'};
     ul {
-        grid-column: ${({ placement }) => (placement === 'right' ? '2' : '1')};
         padding: 0.5rem 0;
         display: flex;
         justify-content: ${({ placement }) =>
@@ -107,14 +113,15 @@ const Skills = styled.ul`
     }
     @media (${QUERIES.medium}) {
         grid-template-columns: ${'1fr'};
+        grid-column: 1/-1;
         ul {
-            grid-column: ${'1'};
             justify-content: ${'start'};
         }
     }
 `;
 
 const Links = styled.div`
+    grid-column: ${({ placement }) => (placement === 'right' ? '2' : '1')};
     display: flex;
     justify-content: ${({ placement }) => (placement === 'right' ? 'end' : 'start')};
     a {
@@ -130,6 +137,7 @@ const Links = styled.div`
         }
     }
     @media (${QUERIES.medium}) {
+        grid-column: 1/-1;
         justify-content: ${'start'};
     }
 `;
