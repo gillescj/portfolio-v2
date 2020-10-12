@@ -108,9 +108,10 @@ const Contact = () => {
 
     const springProps = useSpring({
         config: { mass: 1, tension: 300, friction: 10 },
-        transform: copied ? 'scale(1.35)' : 'scale(1)',
         fill: colour,
-        scale: clicking ? '0.8' : '1',
+        transform: clicking
+            ? `scale(${0.75 + (copied ? 0.25 : 0)})`
+            : `scale(${1 + (copied ? 0.25 : 0)})`,
     });
 
     return (
@@ -132,7 +133,7 @@ const Contact = () => {
                 <AnimatedPaperPlane
                     style={springProps}
                     onClick={() => nextColour()}
-                    onMouseDown={() => setClicking(true)}
+                    onPointerDown={() => setClicking(true)}
                     onMouseUp={() => setClicking(false)}
                 />
             </Graphic>
