@@ -28,6 +28,9 @@ const Graphic = styled.div`
     display: grid;
     justify-content: center;
     align-items: center;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
 `;
 
 const ContactHeader = styled.h1`
