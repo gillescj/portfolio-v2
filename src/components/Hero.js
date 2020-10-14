@@ -64,9 +64,9 @@ const Hero = () => {
                 I'm a software developer based in Ontario, Canada specializing in frontend
                 website development.
             </Description>
-            <ProjectsButton>
-                <a href="#projects">View Projects</a>
-            </ProjectsButton>
+            <a href="#projects">
+                <ProjectsButton>View Projects</ProjectsButton>
+            </a>
         </Container>
     );
 };
