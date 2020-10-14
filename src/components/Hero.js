@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { COLOURS, QUERIES, VALUES } from 'styling';
+import { Button } from 'components/styledComponents';
 
 const Container = styled.section`
     display: grid;
@@ -49,20 +50,8 @@ const Description = styled.p`
     line-height: 2rem;
 `;
 
-const ProjectsButton = styled.button`
-    justify-self: start;
+const ProjectsButton = styled(Button)`
     margin-top: 2rem;
-    background: inherit;
-    color: ${COLOURS.textMain};
-    font-size: 1.3rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: all 300ms;
-    border: 3px ${COLOURS.textMain} solid;
-    border-bottom-right-radius: 1.5rem;
-    &:hover {
-        border: 3px ${COLOURS.accent} solid;
-    }
 `;
 
 const Hero = () => {
