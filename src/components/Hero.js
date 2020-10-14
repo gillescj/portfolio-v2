@@ -50,8 +50,9 @@ const Description = styled.p`
     line-height: 2rem;
 `;
 
-const ProjectsButton = styled(Button)`
+const ProjectsLink = styled.a`
     margin-top: 2rem;
+    width: fit-content;
 `;
 
 const Hero = () => {
@@ -64,9 +65,9 @@ const Hero = () => {
                 I'm a software developer based in Ontario, Canada specializing in frontend
                 website development.
             </Description>
-            <a href="#projects">
-                <ProjectsButton>View Projects</ProjectsButton>
-            </a>
+            <ProjectsLink href="#projects">
+                <Button>View Projects</Button>
+            </ProjectsLink>
         </Container>
     );
 };
