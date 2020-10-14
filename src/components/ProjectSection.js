@@ -18,7 +18,6 @@ const ImageLink = styled.a`
     transition: background-position 0.5s ease-in;
     background-position: top;
     z-index: 10;
-    background-size: 115%;
     filter: brightness(0.8);
     &:hover {
         background-position: bottom;
