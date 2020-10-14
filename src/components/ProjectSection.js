@@ -104,7 +104,7 @@ const Skills = styled.ul`
         display: flex;
         justify-content: ${({ placement }) =>
             placement === 'right' ? 'flex-end' : 'flex-start'};
-        grid-gap: 2rem;
+        grid-gap: 1rem;
         flex-wrap: wrap;
     }
     li {
