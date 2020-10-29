@@ -1,7 +1,7 @@
 import React from 'react';
 import { COLOURS } from 'styling';
 import styled from 'styled-components';
-import { ReactComponent as ChevronUpSVG } from 'assets/svgs/chevron-up.svg';
+import { ReactComponent as GithubSVG } from 'assets/svgs/github.svg';
 
 const Container = styled.footer`
     padding: 2rem;
@@ -10,14 +10,14 @@ const Container = styled.footer`
     margin: auto;
 `;
 
-const ArrowButton = styled.button`
+const GithubButton = styled.button`
     background: none;
     border: none;
     cursor: pointer;
     svg {
         stroke: ${COLOURS.textMain};
-        width: 64px;
-        height: 64px;
+        width: 32px;
+        height: 32px;
         transition: stroke 300ms;
     }
     &:hover {
@@ -28,15 +28,18 @@ const ArrowButton = styled.button`
 `;
 
 const Footer = () => {
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, behaviour: 'smooth' });
-    };
-
     return (
         <Container>
-            <ArrowButton onClick={() => scrollToTop()} aria-label="Scroll back to top">
-                <ChevronUpSVG />
-            </ArrowButton>
+            <GithubButton aria-label="Github Link Button">
+                <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://github.com/gillescj/"
+                    title="Github Account"
+                >
+                    <GithubSVG />
+                </a>
+            </GithubButton>
         </Container>
     );
 };
