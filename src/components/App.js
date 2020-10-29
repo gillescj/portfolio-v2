@@ -6,6 +6,7 @@ import Hero from 'components/Hero';
 import ProjectsList from './ProjectsList';
 import Contact from './Contact';
 import ReactGA from 'react-ga';
+import BackToTop from './BackToTop';
 
 const Container = styled.div`
     background: ${COLOURS.bgMain};
@@ -24,6 +25,7 @@ function App() {
                 <Hero />
                 <ProjectsList />
                 <Contact />
+                <BackToTop />
             </Layout>
         </Container>
     );
