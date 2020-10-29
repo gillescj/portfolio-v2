@@ -11,7 +11,9 @@ export const Button = styled.button`
     transition: all 300ms;
     border: 3px ${COLOURS.textMain} solid;
     border-bottom-right-radius: 1.5rem;
-    &:hover {
+    outline: none;
+    &:hover,
+    &:focus {
         border: 3px ${COLOURS.accent} solid;
     }
 `;
