@@ -28,7 +28,7 @@ export const projectDataList = [
     {
         title: `Trello Mini`,
         skills: ['Svelte', 'SCSS'],
-        description: `A board style list application based off Trello.`,
+        description: `A board style list application based off Trello. Add new tasks/cards to lists to stay organized.`,
         links: {
             siteUrl: 'https://trello-mini.colingillespie.dev/',
             githubUrl: 'https://github.com/gillescj/trello-mini',
