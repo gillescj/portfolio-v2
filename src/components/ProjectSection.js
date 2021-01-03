@@ -16,11 +16,11 @@ const ImageLink = styled.a`
     background-image: url(${({ image }) => image});
     background-size: cover;
     transition: background-position 0.5s ease-in;
-    background-position: top;
+    background-position: left top;
     z-index: 10;
     filter: brightness(0.8);
     &:hover {
-        background-position: bottom;
+        background-position: left bottom;
         transform: scale(1.03);
         transition: background-position 2s ease-in, transform 0.5s ease-in;
         filter: brightness(1);
