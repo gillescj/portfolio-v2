@@ -26,6 +26,17 @@ export const projectDataList = [
             'https://github.com/gillescj/files/blob/master/reddit-clone-scroll.jpg?raw=true',
     },
     {
+        title: `Trello Mini`,
+        skills: ['Svelte', 'SCSS'],
+        description: `A board style list application based off Trello.`,
+        links: {
+            siteUrl: 'https://trello-mini.colingillespie.dev/',
+            githubUrl: 'https://github.com/gillescj/trello-mini',
+        },
+        image:
+            'https://github.com/gillescj/files/blob/master/trello-mini-scroll.PNG?raw=true',
+    },
+    {
         title: `Colour Builder`,
         skills: ['React', 'SCSS', 'Styled-Components'],
         description: `A tool designed to help developers select colours
