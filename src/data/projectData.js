@@ -1,5 +1,15 @@
 export const projectDataList = [
     {
+        title: `The Book Nook`,
+        skills: ['React', 'Nextjs', 'SCSS', 'Styled-Components'],
+        description: `A local used book store website made for displaying business information to potential customers.`,
+        links: {
+            siteUrl: 'https://booknookburlington.com/',
+            githubUrl: '',
+        },
+        image: 'https://github.com/gillescj/files/blob/master/the-book-nook-scroll.jpg?raw=true',
+    },
+    {
         title: `Gatsby's Pizzeria`,
         skills: ['React', 'Gatsby', 'SCSS', 'Styled-Components'],
         description: `A restaurant website that displays menu items and general information 
@@ -8,8 +18,7 @@ export const projectDataList = [
             siteUrl: 'https://pizzeria.colingillespie.dev/',
             githubUrl: 'https://github.com/gillescj/pizzeria',
         },
-        image:
-            'https://github.com/gillescj/files/blob/master/pizzeria-scroll.jpg?raw=true',
+        image: 'https://github.com/gillescj/files/blob/master/pizzeria-scroll.jpg?raw=true',
     },
     {
         title: `Reddit Clone`,
@@ -22,8 +31,7 @@ export const projectDataList = [
             siteUrl: 'https://reddit-clone.colingillespie.dev/',
             githubUrl: 'https://github.com/gillescj/reddit-clone',
         },
-        image:
-            'https://github.com/gillescj/files/blob/master/reddit-clone-scroll.jpg?raw=true',
+        image: 'https://github.com/gillescj/files/blob/master/reddit-clone-scroll.jpg?raw=true',
     },
     {
         title: `Trello Mini`,
@@ -33,8 +41,7 @@ export const projectDataList = [
             siteUrl: 'https://trello-mini.colingillespie.dev/',
             githubUrl: 'https://github.com/gillescj/trello-mini',
         },
-        image:
-            'https://github.com/gillescj/files/blob/master/trello-mini-scroll.PNG?raw=true',
+        image: 'https://github.com/gillescj/files/blob/master/trello-mini-scroll.PNG?raw=true',
     },
     {
         title: `Colour Builder`,
@@ -47,8 +54,7 @@ export const projectDataList = [
             siteUrl: 'https://colour-builder.colingillespie.dev/',
             githubUrl: 'https://github.com/gillescj/colour-builder',
         },
-        image:
-            'https://github.com/gillescj/files/blob/master/colour-builder-scroll.png?raw=true',
+        image: 'https://github.com/gillescj/files/blob/master/colour-builder-scroll.png?raw=true',
     },
     {
         title: `Nonstop News`,
@@ -60,8 +66,7 @@ export const projectDataList = [
             siteUrl: 'https://nonstop-news.colingillespie.dev/',
             githubUrl: 'https://github.com/gillescj/nonstop-news',
         },
-        image:
-            'https://github.com/gillescj/files/blob/master/nonstop-news-scroll.jpg?raw=true',
+        image: 'https://github.com/gillescj/files/blob/master/nonstop-news-scroll.jpg?raw=true',
     },
     {
         title: `Game Atlas`,
@@ -74,8 +79,7 @@ export const projectDataList = [
             siteUrl: 'https://game-atlas.colingillespie.dev/',
             githubUrl: 'https://github.com/gillescj/game-atlas',
         },
-        image:
-            'https://github.com/gillescj/files/blob/master/game-atlas-scroll.jpg?raw=true',
+        image: 'https://github.com/gillescj/files/blob/master/game-atlas-scroll.jpg?raw=true',
     },
     {
         title: `Cryptosh`,
@@ -86,7 +90,6 @@ export const projectDataList = [
             siteUrl: 'https://cryptosh.colingillespie.dev/',
             githubUrl: 'https://github.com/gillescj/cryptosh',
         },
-        image:
-            'https://github.com/gillescj/files/blob/master/cryptosh-scroll.jpg?raw=true',
+        image: 'https://github.com/gillescj/files/blob/master/cryptosh-scroll.jpg?raw=true',
     },
 ];
