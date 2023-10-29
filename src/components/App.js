@@ -22,7 +22,6 @@ function App() {
         <Container>
             <Layout>
                 <Hero />
-                <Contact />
                 <BackToTop />
             </Layout>
         </Container>
