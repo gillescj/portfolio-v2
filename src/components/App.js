@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { COLOURS } from 'styling';
 import Layout from 'components/Layout';
 import Hero from 'components/Hero';
-import ProjectsList from './ProjectsList';
 import Contact from './Contact';
 import ReactGA from 'react-ga';
 import BackToTop from './BackToTop';
@@ -23,7 +22,6 @@ function App() {
         <Container>
             <Layout>
                 <Hero />
-                <ProjectsList />
                 <Contact />
                 <BackToTop />
             </Layout>
