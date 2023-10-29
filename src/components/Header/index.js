@@ -23,10 +23,7 @@ const Container = styled.header`
 const Header = () => {
     return (
         <WidthWrapper maxHeaderWidth={QUERIES.maxHeaderWidth}>
-            <Container>
-                <MobileNavigation />
-                <Navigation />
-            </Container>
+            <Container></Container>
         </WidthWrapper>
     );
 };
