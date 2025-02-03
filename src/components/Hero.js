@@ -62,7 +62,7 @@ const Hero = () => {
             <Name>Colin Gillespie.</Name>
             <About>I develop websites.</About>
             <Description>
-                I'm a software developer based in Ontario, Canada specializing in frontend
+                I'm a software developer based in Ontario, Canada specializing in
                 website development.
             </Description>
         </Container>
