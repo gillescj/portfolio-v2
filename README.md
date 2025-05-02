@@ -3,9 +3,7 @@
 > [!NOTE]  
 > This project is archived
 
-Portfolio showcasing recent projects. Developed with React.
-
-[Colin Gillespie | Portfolio](https://colingillespie.dev/)
+Old Portfolio. Developed with React.
 
 ### Installing and Running
 
