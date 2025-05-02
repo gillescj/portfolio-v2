@@ -1,6 +1,9 @@
 # Portfolio
 
-My current portfolio showcasing recent projects. Developed with React.
+> [!NOTE]  
+> This project is archived
+
+Portfolio showcasing recent projects. Developed with React.
 
 [Colin Gillespie | Portfolio](https://colingillespie.dev/)
 
